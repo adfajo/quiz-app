@@ -2,93 +2,93 @@ import 'package:quiz_app/models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
+    'When someone doesn\'t want to talk and they point at their jawline. What is bro doing?',
     [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
+      'Mewing',
+      'Eating',
+      'Digesting',
+      'Thinking',
     ],
   ),
   QuizQuestion(
-      'How are Flutter UIs built?',
+      'Stop ... for that girl, blud',
       [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
+    'Simping',
+    'Tweaking',
+    'Glazing',
+    'Ghosting',
     ]
   ),
   QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
+    'When something isn\'t very good',
     [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
+      'Mid',
+      'Dripped',
+      'Dope',
+      'Salty',
     ],
   ),
   QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    'That\'s why he\'s the ...',
     [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
-      'None of the above',
+      'GOAT',
+      'Queen',
+      'Rizzler',
+      'Karen',
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'Where would you never want to live?',
     [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
+      'Ohio',
+      'Florida',
+      'Malmö',
+      'Oslo',
     ],
   ),
   QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
+    'When you catch your homie doing something weird or sus, what is he?',
     [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
+      'Caught in 4K',
+      'Cooked',
+      'Dripped',
+      'Lit',
     ],
   ),
   QuizQuestion(
-      'What the...?',
+      'What the ...?',
       [
         'Sigma',
-        'Cat',
-        'Dog',
-        'Dog',
+        'Alpha',
+        'Beta',
+        'Frick',
       ]
   ),
   QuizQuestion(
-      'What the...?',
-      [
-        'Sigma',
-        'Cat',
-        'Dog',
-        'Dog',
-      ]
-  ),
-  QuizQuestion(
-      'What the...?',
-      [
-        'Sigma',
-        'Cat',
-        'Dog',
-        'Dog',
-      ]
-  ),
-  QuizQuestion(
-      'You are so...?',
+      'You\'re so skibidi, you\'re so ...',
       [
         'Fanum tax',
+        'Beautiful',
+        'Ugly',
+        'Toilet',
+      ]
+  ),
+  QuizQuestion(
+      'What would you call an assertive and successful man?',
+      [
+        'Alpha',
         'Beta',
         'Sigma',
-        'Sigma',
+        'Delta',
+      ]
+  ),
+  QuizQuestion(
+      'When someone says something goated, what do you answer?',
+      [
+        'Bet',
+        'Erm... what the heck',
+        'No way',
+        'What is blud saying?',
       ]
   )
 ];
