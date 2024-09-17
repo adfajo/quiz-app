@@ -8,9 +8,11 @@ class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({
     super.key,
     required this.onSelectAnswer,
+    required this.onPrevious, // Add onPrevious callback
   });
 
   final void Function(String answer) onSelectAnswer;
+  final void Function() onPrevious;
 
   @override
   State<QuestionsScreen> createState() {
@@ -28,6 +30,15 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     setState(() {
       currentQuestionIndex++; // increments the value by 1
     });
+  }
+
+  void previousQuestion() {
+    if (currentQuestionIndex > 0) {
+      setState(() {
+        currentQuestionIndex--;
+      });
+      widget.onPrevious();
+    }
   }
 
   @override
@@ -59,7 +70,15 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
                   answerQuestion(answer);
                 },
               );
-            })
+            }),
+            const SizedBox(height: 20),
+
+            // Previous button, only displayed when not on the first question
+            if (currentQuestionIndex > 0)
+              ElevatedButton(
+                onPressed: previousQuestion,
+                child: const Text('Previous question'),
+              ),
           ],
         ),
       ),

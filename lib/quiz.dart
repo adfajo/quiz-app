@@ -34,6 +34,15 @@ class _QuizState extends State<Quiz> {
     }
   }
 
+  void _previousQuestion() {
+    setState(() {
+      if (_selectedAnswers.isNotEmpty) {
+        _selectedAnswers.removeLast();
+      }
+      _activeScreen = 'questions-screen'; // Ensure we switch back to the questions screen
+    });
+  }
+
   void restartQuiz() {
     setState(() {
       _selectedAnswers = [];
@@ -48,6 +57,7 @@ class _QuizState extends State<Quiz> {
     if (_activeScreen == 'questions-screen') {
       screenWidget = QuestionsScreen(
         onSelectAnswer: _chooseAnswer,
+        onPrevious: _previousQuestion, // Pass the callback
       );
     }
 
