@@ -39,7 +39,8 @@ class _QuizState extends State<Quiz> {
       if (_selectedAnswers.isNotEmpty) {
         _selectedAnswers.removeLast();
       }
-      _activeScreen = 'questions-screen'; // Ensure we switch back to the questions screen
+      _activeScreen =
+          'questions-screen'; // Ensure we switch back to the questions screen
     });
   }
 
@@ -74,8 +75,8 @@ class _QuizState extends State<Quiz> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(255, 78, 13, 151),
-                Color.fromARGB(255, 107, 15, 168),
+                Color.fromARGB(255, 122, 70, 182),
+                Color.fromARGB(255, 99, 36, 141),
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
